@@ -1,0 +1,53 @@
+﻿<Window x:Class="FINALPOE.VehiclePurchase"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FINALPOE"
+        mc:Ignorable="d"
+        Title="VehiclePurchase" Height="400" Width="600">
+
+    <Border Padding="10">
+            <StackPanel>
+        <Grid>
+                <!--BUTTONS-->
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="ApplyButton" Click="ApplyButton_Click" Margin="0 0 10 0" Grid.Column="0" Content="Apply" />
+                    <Button x:Name="RefreshButton" Margin="10 0 0 0" Grid.Column="2" Content="Refresh" Click="RefreshButton_Click" />
+
+                </Grid>
+            </Grid>
+            <TextBlock Text="Vehicle Purchase" FontWeight="Bold" Margin="0 10"/>
+
+            <!--Model and Make-->
+            <TextBlock Text="Model and Make" />
+            <TextBox x:Name="Model" Padding="2" />
+
+            <!--Purchase Price-->
+            <TextBlock Text="Purchase Price" />
+            <TextBox x:Name="Price" Padding="2" />
+
+
+            <!--Total Deposit-->
+            <TextBlock Text="Total Deposit" />
+            <TextBox x:Name="Deposit" Padding="2" />
+
+            <!--Interest Rate-->
+            <TextBlock Text="Interest Rate" />
+            <TextBox x:Name="Rate" Padding="2" />
+
+            <!--Estimated Insurance Premium-->
+            <TextBlock Text="Estimated Insurance Premium" />
+            <TextBox x:Name="InsurancePremium" Padding="2" />
+
+
+        </StackPanel>
+        </Border >
+</Window>

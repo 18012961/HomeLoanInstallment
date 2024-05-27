@@ -1,0 +1,90 @@
+﻿<Window x:Class="FINALPOE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FINALPOE"
+        mc:Ignorable="d"
+        Title="Expenses" Height="600" Width="400">
+
+    <Border Padding="10">
+        <StackPanel>
+
+            <!--BUTTONS-->
+                <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="ApplyButton" Click="ApplyButton_Click" Margin="0 0 10 0" Grid.Column="0" Content="Apply" />
+                <Button x:Name="Reset" Grid.Column="1" Content="Reset" Click="Reset_Click" />
+                <Button x:Name="Refresh" Margin="10 0 0 0" Grid.Column="2" Content="Refresh" Click="Refresh_Click" />
+
+            </Grid>
+
+            <TextBlock Text="Fortunate's Business and Investment" FontWeight="Bold" Margin="0 10"/>
+
+
+            <!--Monthly Income-->
+            <TextBlock Text="Monthly Income" />
+            <TextBox x:Name="MonthlyIncome" Padding="2" />
+            
+            <!--Monthly Tax Deducted-->
+            <TextBlock Text="Monthly Tax Deducted" />
+            <TextBox x:Name="MonthlyTaxDeducted" Padding="2" />
+            <!--Estimated Monthly Expenditures-->
+            <TextBlock Text="Estimated Monthly Expenditures" FontWeight="Bold" Margin="0 10"/>
+            
+
+
+             <!--Groceries-->
+            <TextBlock Text="Groceries" />
+            <TextBox x:Name="Groceries" Padding="2" />
+
+            <!--Water and Lights-->
+            <TextBlock Text="Water and Lights" />
+            <TextBox x:Name="WaterandLights" Padding="2" />
+
+
+            <!--Travel Cost-->
+            <TextBlock Text="Travel Cost" />
+            <TextBox x:Name="TravelCost" Padding="2" />
+            
+             <!--Cellphone and Telephone-->
+            <TextBlock Text="Cellphone and Telephone" />
+            <TextBox x:Name="TelephoneandCellphone" Padding="2" />
+            
+            
+             <!--Other Expenses-->
+            <TextBlock Text="Other Expenses" />
+            <TextBox x:Name="OtherExpenses" Padding="2" />
+
+
+            <TextBlock Text="Choose One and Apply " FontWeight="Bold" Margin="0 10"/>
+
+            <!--CheckBoxes-->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                
+                </Grid.ColumnDefinitions>
+
+                <!--CheckBoxess-->
+                <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                    <CheckBox Checked="CheckBox_Checked" x:Name="BuyProperty" Content="Buy Property" />
+                    <CheckBox Checked="CheckBox_Checked" x:Name="RentAccomodation" Content="Rent Accomodation" />
+                    <CheckBox Checked="CheckBox_Checked" x:Name="BuyVehicle" Content="Buy Vehicle" />
+                    <CheckBox Checked="CheckBox_Checked" x:Name="SaveUp" Content="Save up" />
+                </StackPanel>
+            </Grid>
+
+        </StackPanel>
+              
+    </Border>
+          
+</Window>

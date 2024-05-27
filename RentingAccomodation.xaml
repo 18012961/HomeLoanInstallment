@@ -1,0 +1,44 @@
+﻿<Window x:Class="FINALPOE.RentingAccomodation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FINALPOE"
+        mc:Ignorable="d"
+        Title="RentingAccomodation" Height="200" Width="600">
+    <Border Padding="10">
+        <StackPanel>
+
+            <Grid>
+                <!--BUTTONS-->
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="ApplyButton" Click="ApplyButton_Click" Margin="0,0,10,0" Grid.Column="0" Content="Apply" Height="20" VerticalAlignment="Top" />
+                    <Button x:Name="RefreshButton" Margin="10 0 0 0" Grid.Column="2" Content="Refresh" Click="RefreshButton_Click" />
+
+                </Grid>
+
+
+
+            </Grid>
+
+            <TextBlock Text="Renting Accomadation" FontWeight="Bold" Margin="0 10"/>
+
+
+            <!--Rental Amount-->
+            <TextBlock Text="Rental Amount" />
+            <TextBox x:Name="RentalAmount" Padding="2" />
+
+            <!--Number of months-->
+            <TextBlock Text="Number of months" />
+            <TextBox x:Name="NumberofMonths" Padding="2" />
+
+        </StackPanel>
+    </Border>
+</Window>
